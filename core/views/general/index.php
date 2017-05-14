@@ -140,7 +140,8 @@
             },
             success: function (data) {
 
-                window.location.reload();
+                console.log(data);
+                //window.location.reload();
 
             },
             error: function (request, error) {
@@ -233,7 +234,7 @@
 
         var $client_id  = "61e9aae2c9434469b3c3690bc82c0958";
         var $redirect   = "http://localhost/supaspots/callback";
-        var $scope      = "user-read-private playlist-modify-public playlist-read-collaborative playlist-modify-private";
+        var $scope      = "user-read-private playlist-modify-public";
 
         window.location.href = 'https://accounts.spotify.com/authorize?client_id=' + $client_id + '&scope=' + $scope + '&response_type=code&redirect_uri=' + $redirect;
 
