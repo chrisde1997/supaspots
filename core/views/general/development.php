@@ -49,6 +49,13 @@
                     <li>Melding aan de gebruiker wanneer de sessie met Spotify bijna verloopt en een mogelijkheid bieden om de sessie te verlengen</li>
 
                 </ul>
+                <br />
+                <strong>Beveiliging</strong>
+                <ul>
+
+                    <li>Het beter opslaan van tokens d.m.v. bijv. salt</li>
+
+                </ul>
 
             </div>
             <div class="col-md-12">
