@@ -20,7 +20,7 @@ class User {
     function authorize($code) {
 
         $client_id      = "61e9aae2c9434469b3c3690bc82c0958";
-        $client_secret  = "9260acdaa1724ef0a8587907b9cd6265";
+        $client_secret  = "";
         $client         = base64_encode($client_id . ":" . $client_secret);
         $redirect       = "http://localhost/supaspots/callback";
 
@@ -176,7 +176,7 @@ class User {
 
     function addSong($song) {
 
-        $user_id        = Cookie::get('user_id');
+        $user_id        = Cookie::get('playlist_owner');
         $playlist_id    = Cookie::get('playlist');
 
         $ch = curl_init();
