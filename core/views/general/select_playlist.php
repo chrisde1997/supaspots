@@ -25,7 +25,7 @@
 
                 $.each($json.items, function (key, value) {
 
-                    if (value.collaborative === true) {
+                    if (value.public === true) {
 
                         $playlists.push(value);
 
@@ -93,7 +93,7 @@
                 <h4>Kies een playlist die je wilt gebruiken:</h4>
 
                 <div class="alert alert-info">
-                    <strong>Welkom!</strong> Je ziet hier je "gezamelijke" afspeellijsten. Zie je hier niets? Dan heb je waarschijnlijk geen afspeellijsten die je kunt gebruiken. <a href="/supaspots/faq#no-playlist"><strong>Wat nu?</strong></a>
+                    <strong>Welkom!</strong> Je ziet hier je "openbare" afspeellijsten. Zie je hier niets? Dan heb je waarschijnlijk geen afspeellijsten die je kunt gebruiken. <a href="/supaspots/faq#no-playlist"><strong>Wat nu?</strong></a>
                 </div>
 
                 <ul id="playlists">
